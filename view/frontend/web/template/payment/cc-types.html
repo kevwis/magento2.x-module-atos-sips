@@ -1,0 +1,39 @@
+<legend class="legend">
+    <span><!-- ko i18n: 'Credit Card Information'--><!-- /ko --></span>
+</legend><br />
+<div class="fieldset"
+     data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+    <div class="field cc_type required"
+         data-mage-init='{"validation":{}}'>
+
+        <div class="control">
+            <ul class="credit-card-types">
+                <!-- ko foreach: {data: getAvailableCardTypes(), as: 'item'} -->
+                <li class="item" data-bind="css: {
+                    _active: true
+                } ">
+                    <!--ko if: $parent.getIcon(item) -->
+                    <input type="radio"
+                           name="payment[cc_type]"
+                           class="radio required-entry"
+                           data-validate="{'validate-one-required-by-name':true}"
+                           data-bind="attr: {
+                                'id': $parent.getCode() + '_cc_type_' + item.toLowerCase(),
+                                'value': item.toUpperCase(),
+                    }">
+
+                    <label data-bind="attr: {for: $parent.getCode() + '_cc_type_' + item.toLowerCase()}">
+                        <img data-bind="attr: {
+                            'src': $parent.getIcon(item).url,
+                            'alt': item,
+                            'width': $parent.getIcon(item).width,
+                            'height': $parent.getIcon(item).height
+                        }">
+                    </label>
+                    <!--/ko-->
+                </li>
+                <!--/ko-->
+            </ul>
+        </div>
+    </div>
+</div>

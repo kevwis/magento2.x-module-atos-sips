@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 Kev WIS All rights reserved.
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="atos_settings_sales_email_template_error_payment" label="Error Payment" file="payment_error.html" type="html" module="Kevwis_Atos" area="frontend"/>
+</config>

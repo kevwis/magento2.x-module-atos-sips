@@ -1,0 +1,33 @@
+{
+    "name": "kevwis/module-atos-sips",
+    "description": "Soon ATOS/SIPS payment module",
+    "require": {
+        "php": "~5.6.5|7.0.2|7.0.4|~7.0.6",
+        "magento/module-sales": "100.1.*",
+        "magento/module-quote": "100.1.*",
+        "magento/module-payment": "100.1.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Kev WIS",
+            "email": "contact@kevwis.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Soon\\AtosSips\\": ""
+        }
+    },
+    "bin": [
+        "bin/atos"
+    ]
+}

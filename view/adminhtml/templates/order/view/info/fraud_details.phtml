@@ -1,0 +1,25 @@
+<?php
+/**
+ * Copyright © 2017 Kev WIS All rights reserved.
+ *
+ */
+
+// @codingStandardsIgnoreFile
+/**
+ * @var \Kevwis\Atos\Block\Adminhtml\Order\View\Info\FraudDetails $block
+ */
+$payment = $block->getPayment();
+$fraudDetails = $payment->getAdditionalInformation('fraud_details');
+?>
+
+<?php if (!empty($fraudDetails)): ?>
+    <div class="admin__page-section-item-title">
+        <span class="title"><?php echo $block->escapeHtml(__('Fraud Detection ')); ?></span>
+    </div>
+
+    <div class="admin__page-section-item-content">
+        <div class="order-payment-additional">
+
+        </div>
+    </div>
+<?php endif; ?>

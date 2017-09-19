@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ *
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Payment\Block\Info $block
+ * @see \Magento\Payment\Block\Info
+ */
+
+$title = $block->escapeHtml($block->getMethod()->getTitle())
+?>
+<dl class="payment-method">
+    <dt class="title"><?php /* @noEscape */ echo $title; ?></dt>
+    <div id="co-atos-form" data-mage-init='{"atos":{"method": "<?php echo $block->getMethod()->getCode() ?>", "data": <?php echo json_encode($block->getMethod()->getInfoInstance()->getData())?>}}'>
+        <?php echo $block->getForm(); ?>
+    </div>
+</dl>
+<?php echo $block->getChildHtml()?>
