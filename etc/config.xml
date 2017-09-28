@@ -46,7 +46,7 @@
                 <capture_mode><![CDATA[PAYMENT_N]]></capture_mode>
                 <capture_day>5</capture_day>
                 <nb_payment>3</nb_payment>
-                <cctypes>AMEX,2,VISA,2,CB,2,MASTERCARD,2</cctypes>
+                <cctypes>AMEX,VISA,CB,MASTERCARD</cctypes>
                 <currency_code>978</currency_code>
                 <order_place_redirect_url>atos/payment/redirect</order_place_redirect_url>
                 <automatic_response_url>atos/payment/response/type/several</automatic_response_url>
@@ -71,7 +71,7 @@
                 <capture_mode><![CDATA[AUTHOR_CAPTURE]]></capture_mode>
                 <capture_day>0</capture_day>
                 <currency_code>978</currency_code>
-                <cctypes>3XCBFRANFINANCE,1</cctypes>
+                <cctypes>3XCBFRANFINANCE</cctypes>
                 <order_place_redirect_url>atos/payment/redirect</order_place_redirect_url>
                 <automatic_response_url>atos/payment/response/type/franfinance3x</automatic_response_url>
                 <normal_return_url>atos/payment/success</normal_return_url>
@@ -94,7 +94,7 @@
                 <payment_action><![CDATA[order]]></payment_action>
                 <capture_mode><![CDATA[AUTHOR_CAPTURE]]></capture_mode>
                 <capture_day>0</capture_day>
-                <cctypes>COFIDIS_3X,2</cctypes>
+                <cctypes>COFIDIS_3X</cctypes>
                 <currency_code>978</currency_code>
                 <order_place_redirect_url>atos/payment/redirect</order_place_redirect_url>
                 <automatic_response_url>atos/payment/response/type/cofidis3x</automatic_response_url>
@@ -116,7 +116,7 @@
                 <active>0</active>
                 <title><![CDATA[1EUROCOM]]></title>
                 <payment_action><![CDATA[order]]></payment_action>
-                <cctypes>1EUROCOM,2</cctypes>
+                <cctypes>1EUROCOM</cctypes>
                 <currency_code>978</currency_code>
                 <order_place_redirect_url>atos/payment/redirect</order_place_redirect_url>
                 <automatic_response_url>atos/payment/response/type/euro</automatic_response_url>
@@ -138,7 +138,7 @@
                 <active>0</active>
                 <title><![CDATA[Aurore Card]]></title>
                 <payment_action><![CDATA[order]]></payment_action>
-                <cctypes>AURORE,2</cctypes>
+                <cctypes>AURORE</cctypes>
                 <currency_code>978</currency_code>
                 <order_place_redirect_url>atos/payment/redirect</order_place_redirect_url>
                 <automatic_response_url>atos/payment/response/type/aurore</automatic_response_url>

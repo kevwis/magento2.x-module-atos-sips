@@ -267,7 +267,7 @@ class Config implements ConfigInterface
      */
     public function getPaymentMeans()
     {
-        return (string) $this->getValue('cctypes');
+        return str_replace(',', ',2,',  $this->getValue('cctypes')) . ',2';
     }
 
     /**
